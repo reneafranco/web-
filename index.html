@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="icon/png" href="images/black-logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/bot-integration.js"></script>
 </head>
 <!-- Navbar -->
 <nav class="navbar">
@@ -373,7 +374,7 @@
 
           }
           </script>
-          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<!--          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>-->
 
           <df-messenger
                   intent="WELCOME"
@@ -385,6 +386,21 @@
           ></df-messenger>
 
         </div>
+        <style>
+            df-messenger {
+            --df-messenger-button-titlebar-color: #48dbfb;
+            --df-messenger-send-icon: #48dbfb;
+
+<!--             &#45;&#45;df-messenger-bot-message: #878fac;-->
+
+<!--             &#45;&#45;df-messenger-chat-background-color: #fafafa;-->
+<!--             &#45;&#45;df-messenger-font-color: white;-->
+
+
+<!--             &#45;&#45;df-messenger-user-message: #353b48;-->
+
+            }
+         </style>
       </section>
 
       <section id="footer">
