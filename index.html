@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="icon/png" href="images/black-logo.png">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/scripts.js"></script>
@@ -36,12 +36,7 @@
 
 <!-- Home -->
 <section id="home">
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-  <df-messenger
-          chat-title="Web-Search"
-          agent-id="9f2f1beb-c83b-40ab-90ac-8a47a83993d2"
-          language-code="en"
-  ></df-messenger>
+
   <div class="inner-width">
     <div class="content">
       <h1></h1>
@@ -378,25 +373,35 @@
 
           }
           </script>
+          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+          <df-messenger
+                  intent="WELCOME"
+                  chat-title="FAQ"
+                  agent-id="05afe198-0068-4e38-a576-f944ca7a0f07"
+                  chat-icon="images/works/bot-icon.png"
+
+                  language-code="en"
+          ></df-messenger>
+
         </div>
       </section>
 
       <section id="footer">
         <footer>
-          <div class="inner-width">
-            <div class="copyright">
-                &copy; 2023 | Created & Designed By <a href="#">Rene A Franco</a>
+            <div class="inner-width">
+              <div class="copyright">
+                  &copy; 2023 | Created & Designed By <a href="#">Rene A Franco</a>
+              </div>
             </div>
+          <div class="sm">
+            <a href="https://www.linkedin.com/in/rene-adonay/" class="fab fa-linkedin-in"></a>
+            <a href="https://github.com/reneafranco" class="fab fa-github"></a>
+            <a href="https://www.youtube.com/channel/UCUqE95T8WcqfGzPUvKDPIww" class="fab fa-youtube"></a>
+            <a href="https://www.instagram.com/coding_python_tester/" target="instagram" class="fab fa-instagram"></a>
           </div>
-      <div class="sm">
-        <a href="https://www.linkedin.com/in/rene-adonay/" class="fab fa-linkedin-in"></a>
-        <a href="https://github.com/reneafranco" class="fab fa-github"></a>
-        <a href="https://www.youtube.com/channel/UCUqE95T8WcqfGzPUvKDPIww" class="fab fa-youtube"></a>
-        <a href="https://www.instagram.com/coding_python_tester/" target="instagram" class="fab fa-instagram"></a>
-      </div>
-    </div>
-  </footer>
-          <!-- Go Top BTN -->
-          <button class="goTop fas fa-arrow-up"></button>
-      </section>
+        </footer>
+            <!-- Go Top BTN -->
+            <button class="goTop fas fa-arrow-up"></button>
+        </section>
 </html>
