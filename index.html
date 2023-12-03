@@ -13,6 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/BotIntegration.js"></script>
 </head>
 <!-- Navbar -->
 <nav class="navbar">
@@ -373,6 +374,14 @@
 
           }
           </script>
+
+          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+          <df-messenger
+                  intent="WELCOME"
+                  chat-title="FAQ"
+                  agent-id="05afe198-0068-4e38-a576-f944ca7a0f07"
+                  language-code="en"
+          ></df-messenger>
         </div>
       </section>
 

@@ -554,6 +554,8 @@ footer{
 
 .goTop{
   position: fixed;
+  margin-right:-10px;
+  margin-bottom : 40px;
   z-index: 999;
   bottom: 40px;
   right: 40px;
