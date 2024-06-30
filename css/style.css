@@ -668,6 +668,9 @@ footer{
   .nameZone, .emailZone{
     max-width: 100%;
   }
+  df-messenger {
+    display: none;
+  }
 }
 
 #trucazo{
